@@ -80,7 +80,9 @@ while True:
         os.system("apt install git,python,python2")
         os.system("git clone https://github.com/joselucas257/D.H.C-DDos")
         os.system("mv D.H.C-DDos /$HOME/")
-        print("ágora de Ctrl+C para voltar pra home, e de o comando [cd D.H.C-DDos] para abrir o script")
+        time.sleep(3)
+        os.system("clear")
+        print('\033[42;1;33m'+'ágora de Ctrl+C para voltar pra home, e de o comando [cd D.H.C-DDos] para abrir o script'+'\033[0;0m')
     elif opcao == 2:
         print("brute force")
     elif opcao == 3:
@@ -90,9 +92,11 @@ while True:
         time.sleep(2)
         os.system("apt update && apt upgrade")
         os.system("apt install wget")
-        os.system("wget https://www.mediafire.com/file/e7ey9lbc2xbxvoq/dhcscan.py/file")
+        os.system("git clone https://github.com/joselucas257/dhcscan")
         time.sleep(2)
-        os.system("mv dhcscan.py /$HOME/")
-        print '\033[42;1;33m'+'agora de Ctrl+C e de o comando cd para voltar para a home e de o comando python3 dhcscan.py (e o ip do alvo)'+'\033[0;0m'
+        os.system("mv dhcscan /$HOME/")
+        time.sleep(3)
+        os.system("clear")
+        print('\033[42;1;33m'+'agora de Ctrl+C e de o comando cd para voltar para a home e de o comando cd dhcscan'+'\033[0;0m')
     elif opcao == 5:
         print("exploits")
